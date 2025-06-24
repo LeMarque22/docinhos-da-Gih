@@ -84,22 +84,24 @@ main section {
     text-align: center;
 }
 
-#hero {
+/* mudei a faixa pra banner pra ser reutilizada */
+.hero-banner {
     background: linear-gradient(to right, #fce4ec, #f4c895);
-    color: #c66d22;
     padding: 80px 0;
+    text-align: center;
 }
 
-#hero h2 {
+.hero-banner h2 {
     font-size: 3em;
     margin-bottom: 20px;
     color: #874709;
 }
 
-#hero p {
+.hero-banner p {
     font-size: 1.2em;
     max-width: 800px;
     margin: 0 auto 30px auto;
+    color: #c66d22;
 }
 
 .btn {
@@ -193,7 +195,7 @@ footer p {
         margin: 10px 0;
     }
 
-    #hero h2 {
+    .hero-banner h2 {
         font-size: 2.2em;
     }
 
@@ -207,7 +209,7 @@ footer p {
         width: 90%;
     }
 
-    #hero h2 {
+    .hero-banner h2 {
         font-size: 1.8em;
     }
 
@@ -216,7 +218,11 @@ footer p {
     }
 }
 
-/* === daqui pra baixo é as partes que adicionei pra pagina do Cardápio === */
+/* estilos das paginas */
+
+#cardapio-section {
+    background-color: #fff; 
+}
 
 #cardapio-section h2 {
     font-size: 2.8em;
@@ -281,6 +287,95 @@ footer p {
     border: 2px dashed #da6915;
 }
 
+
+/*  lista de sabores dos docinhos */
+.sabores-disponiveis {
+    margin-top: 50px; 
+    text-align: center;
+}
+
+.sabores-disponiveis h3 {
+    font-size: 2em;
+    color: #874709;
+    margin-bottom: 10px;
+}
+
+.sabores-disponiveis p {
+    font-size: 1.1em !important; 
+    color: #666 !important;
+    margin-bottom: 30px;
+}
+
+.hero-banner .subtitulo-cardapio {
+    margin-bottom: 0; 
+}
+
+.sabores-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sabores-lista li {
+    background-color: #fff;
+    color: #dc6f1a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    border: 1px solid #fce4ec;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.sabores-lista li:hover {
+    background-color: #fce4ec;
+    color: #874709;
+    transform: translateY(-2px);
+}
+
+/*  pagina jornada de atleta  */
+#jornada-section {
+    background-color: #fff;
+    padding: 60px 0; 
+}
+
+.subtitulo-jornada {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: -10px auto 0 auto; 
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.galeria-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 280px; 
+    background-color: #fdf0e6; 
+}
+
+.galeria-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+.galeria-item img,
+.galeria-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+}
 
 
 #contato-hero {
