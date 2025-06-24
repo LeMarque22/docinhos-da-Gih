@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Doce Nocaute</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo">
+      <a href="index.html">
+        <h1>Doce Nocaute</h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="jornada-atleta.html">Jornada de Atleta</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="contato-hero">
+    <div class="container">
+      <h2>Fale Conosco e Faça Seu Pedido!</h2>
+      <p>Seja para tirar dúvidas, fazer um orçamento ou encomendar seus doces, estamos prontos para te atender.</p>
+    </div>
+  </section>
+
+  <section id="contato-conteudo">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-form-col">
+          <h3>Envie sua Mensagem</h3>
+          <form action="#" method="POST" class="contato-form">
+            <div class="form-group">
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Seu E-mail:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone (opcional):</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+            </div>
+            <div class="form-group">
+              <label for="assunto">Assunto:</label>
+              <input type="text" id="assunto" name="assunto" required>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Sua Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+          </form>
+        </div>
+
+        <div class="contato-info-col">
+          <h3>Ou Encontre-nos Aqui!</h3>
+          <p>Prefere um contato mais direto? Clique nos ícones abaixo para falar conosco:</p>
+
+          <div class="social-links">
+            <a href="" target="_blank" class="social-icon whatsapp">
+              <i class="fab fa-whatsapp"></i>
+              <span>WhatsApp</span>
+              <img src="imagens/foto-whatsapp.jpeg" alt="" class="">
+            </a>
+            <a href="https://www.instagram.com/stoiani_fighter/?igsh=MXNhNmVhZGZsYWV6ZA%3D%3D" target="_blank" class="social-icon instagram">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+              <img src="imagens/foto-instagram.jpeg" alt="" class="">
+            </a>
+          </div>
+
+          <div class="endereco">
+            <h4>Atendimento (Retirada de Pedidos)</h4>
+            <p>Rua [Nome da Rua], [Número]</p>
+            <p>[Bairro], [Cidade] - [Estado]</p>
+            <p>Horário: Seg-Sex: 09h-18h | Sáb: 09h-13h</p>
+            <p><small>(Atendimento com hora marcada para retirada)</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 Doce Nocaute. Todos os direitos reservados.</p>
+    <p>Desenvolvido por: Alexandre Rezende e Iuri Marques</p>
+    <p>Instituição: UCB - Universidade Católica de Brasília</p>
+  </div>
+</footer>
+
+</body>
+</html>

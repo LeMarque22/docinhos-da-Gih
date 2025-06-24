@@ -84,7 +84,7 @@ main section {
     text-align: center;
 }
 
-/* mudei pra banner pra reutilizar nas outras paginas */
+/* mudei a faixa pra banner pra ser reutilizada */
 .hero-banner {
     background: linear-gradient(to right, #fce4ec, #f4c895);
     padding: 80px 0;
@@ -218,7 +218,7 @@ footer p {
     }
 }
 
-/* esses aqui sao mais específicos de cada pagina  */
+/* estilos das paginas */
 
 #cardapio-section {
     background-color: #fff; 
@@ -235,7 +235,7 @@ footer p {
     margin: -10px auto 40px auto;
 }
 
-/* carrossel de imagens simples, apesar que eu ainda não tenho certeza se a gente usa esse mesmo */
+/* Carrossel de Imagens Simples, apesar que eu ainda não tenho certeza se a gente usa esse mesmo */
 .imagem-carrossel {
     display: flex;
     overflow-x: scroll;
@@ -336,7 +336,7 @@ footer p {
     transform: translateY(-2px);
 }
 
-/*  pagina jornada de atleta */
+/*  pagina jornada de atleta  */
 #jornada-section {
     background-color: #fff;
     padding: 60px 0; 
@@ -374,4 +374,222 @@ footer p {
     height: 100%;
     object-fit: contain; 
     display: block;
+}
+
+#contato-hero {
+    background: linear-gradient(to right, #c87f1d, #fce4ec);
+    color: #874709;
+    padding: 80px 0;
+}
+
+#contato-hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #da6915;
+}
+
+#contato-hero p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+#contato-conteudo {
+    background-color: #fff;
+    padding-bottom: 80px;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.contato-form-col,
+.contato-info-col {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contato-form-col h3,
+.contato-info-col h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #874709;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #da6915;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contato-form .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+
+.contato-info-col p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon .icon-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    z-index: 1;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover .icon-photo {
+    opacity: 0.8;
+}
+
+
+.social-icon i {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #fff;
+    z-index: 2;
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.social-icon span {
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+.social-icon.whatsapp {
+    background-color: #25D366;
+}
+
+.social-icon.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* Gradiente do Instagram */
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Endereço e Horário */
+.endereco {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px dashed #eee;
+    text-align: center;
+}
+
+.endereco h4 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #da6915;
+}
+
+.endereco p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.endereco small {
+    font-size: 0.85em;
+    color: #777;
+}
+
+
+@media (max-width: 992px) {
+    .contato-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contato-form-col,
+    .contato-info-col {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .social-icon {
+        width: 100%;
+        max-width: 250px;
+    }
 }
