@@ -540,23 +540,52 @@ footer p {
         width: 100%;
         max-width: 250px;
     }
+}
 
-/* coisinhas pra a pagina sobre mim */
+/* --- Estilos aprimorados para a página Sobre Mim --- */
 #sobre-mim-conteudo {
     background-color: #fff;
-    padding: 60px 0;
+    padding: 80px 0;
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.sobre-imagem img:hover {
+    transform: scale(1.05);
 }
 
 .texto-atleta {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.1em;
-    line-height: 1.7;
+    max-width: none; /* Ajuste para o layout em grid */
+    margin: 0; /* Ajuste para o layout em grid */
+    font-size: 1.2em; /* Fonte maior, como solicitado */
+    line-height: 1.8;
     color: #555;
     text-align: justify; 
 }
 
 .texto-atleta p {
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
 }
+
+@media (max-width: 768px) {
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .sobre-imagem {
+        max-width: 280px;
+        margin: 0 auto; /* Centraliza a imagem quando empilhada */
+    }
 }
