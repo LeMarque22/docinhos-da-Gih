@@ -401,71 +401,25 @@ footer p {
 
 .contato-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: flex-start;
-    text-align: left;
 }
 
-.contato-form-col,
 .contato-info-col {
+    max-width: 650px; /* Define uma largura máxima para a caixa */
+    margin: 0 auto; /* Centraliza a caixa na página */
     padding: 30px;
     border-radius: 10px;
     background-color: #fcfcfc;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
-.contato-form-col h3,
 .contato-info-col h3 {
     text-align: center;
     margin-bottom: 30px;
     font-size: 2em;
     color: #874709;
 }
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 600;
-    color: #555;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"],
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #da6915;
-    outline: none;
-}
-
-.form-group textarea {
-    resize: vertical;
-    min-height: 120px;
-}
-
-.contato-form .btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 1.1em;
-    margin-top: 15px;
-}
-
 
 .contato-info-col p {
     text-align: center;
@@ -571,12 +525,6 @@ footer p {
 
 
 @media (max-width: 992px) {
-    .contato-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .contato-form-col,
     .contato-info-col {
         padding: 25px;
     }
