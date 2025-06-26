@@ -287,7 +287,6 @@ footer p {
     border: 2px dashed #da6915;
 }
 
-
 /*  lista de sabores dos docinhos */
 .sabores-disponiveis {
     margin-top: 50px; 
@@ -376,7 +375,6 @@ footer p {
     object-fit: contain; 
     display: block;
 }
-
 
 #contato-hero {
     background: linear-gradient(to right, #c87f1d, #fce4ec);
@@ -594,4 +592,23 @@ footer p {
         width: 100%;
         max-width: 250px;
     }
+
+/* coisinhas pra a pagina sobre mim */
+#sobre-mim-conteudo {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.texto-atleta {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.7;
+    color: #555;
+    text-align: justify; 
+}
+
+.texto-atleta p {
+    margin-bottom: 20px; 
+}
 }
