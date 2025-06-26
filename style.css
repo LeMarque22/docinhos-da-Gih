@@ -406,8 +406,7 @@ footer p {
 }
 
 .contato-info-col {
-    max-width: 650px; /* Define uma largura máxima para a caixa */
-    margin: 0 auto; /* Centraliza a caixa na página */
+    margin: 0 auto; 
     padding: 30px;
     border-radius: 10px;
     background-color: #fcfcfc;
@@ -542,7 +541,7 @@ footer p {
     }
 }
 
-/* --- Estilos aprimorados para a página Sobre Mim --- */
+/* estilos  pagina sobre mim */
 #sobre-mim-conteudo {
     background-color: #fff;
     padding: 80px 0;
@@ -567,9 +566,9 @@ footer p {
 }
 
 .texto-atleta {
-    max-width: none; /* Ajuste para o layout em grid */
-    margin: 0; /* Ajuste para o layout em grid */
-    font-size: 1.2em; /* Fonte maior, como solicitado */
+    max-width: none; 
+    margin: 0; 
+    font-size: 1.2em; 
     line-height: 1.8;
     color: #555;
     text-align: justify; 
@@ -586,6 +585,6 @@ footer p {
     }
     .sobre-imagem {
         max-width: 280px;
-        margin: 0 auto; /* Centraliza a imagem quando empilhada */
+        margin: 0 auto; 
     }
 }
